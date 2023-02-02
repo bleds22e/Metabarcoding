@@ -65,3 +65,14 @@ Scripts for data prep and plotting the trap and bait data
 
 ###### original_data
 Files as received from Jonah Ventures
+
+## What's a WeeTU?
+WeeTUs (or WTU) are the Weecology re-calculation of the OTUs (organismal taxonomic unit). DNA sequences that are identified as the same species (or other taxonomic level) can have different OTUs based on minor changes in the nucleotides. At any given taxonomic level, all of the matching identities are given the same WTU number.
+
+For example:
+
+* Any OTU that is idenified down to the species Muhlenbergia porteri is given the same WTU.species number: 613
+* Any OTU identified to a different species of Mulhenbergia is given a unique WTU.species. Mulhenbergia richardsonis is WTU.species 614 while Mulhenbergia arenacea is WTU.species 609.
+* OTUs which are identified to the genus Mulhenbergia but not identified at a species level (species = NA) are all given the same WTU.species number (618)
+* Although all of the OTUs above will have different WTU.species numbers, they will all have the same WTU.genus number (and all other WTUs) because they are all identified to the same genus: WTU.genus = 395; WTU.family = 54.
+* If you decide to use WTUs, I would suggest using WTU.genus for most analyses. Most of the species which are identified do not match up to species we have at our site.
